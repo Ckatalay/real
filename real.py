@@ -1,25 +1,26 @@
 import math
 
+
 class Real:
-    def __init__(self, witdth, height):
-        self.width = witdth
-        self.height = height
+    def __init__(self, diagonal, ratio):
+        self.diognal = diagonal
+        self.ratio = ratio
+        self.width_ratio, self.height_ratio = ratio.split(":")
 
     def __str__(self):
-        return f"{self.diognal:.2f} cm"
-    
+        width, height, area = self.get_dimensions()
+        return f"{area:.2f} inches squared"
 
-    @property
-    def diognal(self):
-        self._diognal = math.sqrt(self.width ** 2 + self.height ** 2)
-        return self._diognal
-    
-    
-    @diognal.setter
-    def diognal(self, diognal):
-        self._diognal = diognal
+    def get_dimensions(self):
+        diagonal_ratio = math.sqrt(
+            int(self.width_ratio) ** 2 + int(self.height_ratio) ** 2
+        )
+        width = (self.diognal / diagonal_ratio) * int(self.width_ratio)
+        height = (self.diognal / diagonal_ratio) * int(self.height_ratio)
+        area = width * height
+        return width, height, area
 
-    
 
-real = Real(16, 9)
-print(real)
+if __name__ == "__main__":
+    real = Real(55, "16:9")
+    print(real)
