@@ -22,4 +22,11 @@ from real import Real
 # Example usage
 screen = Real(10, "16:9")
 print(screen)
+
+# get measurment individually
+width = real.get_dimensions()["width"]
+height = real.get_dimensions()["height"]
+area = real.get_dimensions()["area"]
 ```
+
+
