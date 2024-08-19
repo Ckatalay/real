@@ -9,7 +9,8 @@
 
 ## Installation
 
-This package is standalone and does not require installation of additional dependencies. Simply download the `Real` class and use it in your project.
+```python
+pip install real
 
 ## Usage
 
