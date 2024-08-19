@@ -18,12 +18,12 @@ class Real:
         width = (self.diagonal / diagonal_ratio) * int(self.width_ratio)
         height = (self.diagonal / diagonal_ratio) * int(self.height_ratio)
         area = width * height
-        dimentions = {
+        dimensions = {
             "width": width,
             "height": height,
             "area": area,
         }
-        return dimentions
+        return dimensions
 
 
 if __name__ == "__main__":
