@@ -11,7 +11,7 @@
 
 ```python
 pip install real
-
+```
 ## Usage
 
 Here's a basic example of how to use the `Real` class:
@@ -22,3 +22,4 @@ from real import Real
 # Example usage
 screen = Real(10, "16:9")
 print(screen)
+```
