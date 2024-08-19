@@ -9,7 +9,11 @@ class Real:
 
     def __str__(self):
         dimensions = self.get_dimensions()
-        return f"{dimensions['area']:.2f} inches squared"
+        return (
+            f"Width: {dimensions['width']:.2f} inches, "
+            f"Height: {dimensions['height']:.2f} inches, "
+            f"Area: {dimensions['area']:.2f} inches squared"
+        )
 
     def get_dimensions(self):
         diagonal_ratio = math.sqrt(
