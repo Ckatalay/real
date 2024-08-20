@@ -10,20 +10,20 @@
 ## Installation
 
 ```python
-pip install real
+pip install realscreenPy
 ```
 ## Usage
 
 Here's a basic example of how to use the `Real` class:
 
 ```python
-from real import Real
+from realscreenPy import Real
 
 # Example usage
 screen = Real(10, "16:9")
 print(screen)
 
-# get measurment individually
+# Get measurments individually
 width = real.get_dimensions()["width"]
 height = real.get_dimensions()["height"]
 area = real.get_dimensions()["area"]
