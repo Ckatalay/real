@@ -1,4 +1,4 @@
-from real import Real
+from realscreenPy.real import Real
 import math
 import pytest
 
