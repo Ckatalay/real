@@ -1,5 +1,8 @@
 # Real
 
+### Diagonal measurements are stupid and doesn't make any sense!
+
+
 **Real** is a Python class designed to calculate the real screen size, including the width, height, and area, based on the diagonal measurement and aspect ratio of the screen. This can be especially useful for calculating the dimensions of TVs, monitors, or other displays.
 
 ## Features
